@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Welcome | Simple Intrest Result</title>
+    
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <div width="20%"></div>
+    <div class="one" style="width: 20%; float:left">
+        <form method="POST" action="Home/Simple">
+            <fieldset style="background-color: #a1ebf3;">
+                @* <h1>Hello @ViewBag.Guest</h1> *@
+                <legend>Simple Interest Calculate:</legend><br>
+                <input type="text" name="principle" Placeholder="Enter Principle" required=""><br><br>
+                <input type="text" name="Rate" Placeholder="Enter Rate" required=""><br><br>
+                <input type="text" name="Period" Placeholder="Enter Period" required=""><br><br>
+                <input type="submit" value="Calculate"><br><br>
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div><br>
+
+    <div class="two" style="width:20%; background-color: antiquewhite;">
+        <p>
+            <h3>Result of Simple Interest=@ViewBag.Simple</h3>
+        </p><br>
+    </div>
+
+</body>
+
+</html>
